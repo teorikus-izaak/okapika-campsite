@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wild Acacia Camp – Namibia</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--text:#16283a;--muted:#51657a;--blue:#1f5fa8;--navy:#123a6b;--yellow:#f5b921;--green:#3e8e5a;--soft:#f6f9fc;--line:#dde7ef;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:#fff;color:var(--text);font:400 1.05rem/1.65 "Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#fff;z-index:30}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:800;color:var(--navy)}
+h2{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:800;color:var(--navy)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:68px 0}
+svg{display:block;width:100%;height:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.logo{font:800 1.25rem Fraunces,Georgia,serif;color:var(--blue);text-decoration:none}.logo span{color:var(--green)}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--text);font-weight:600}
+nav a:hover{background:var(--soft)}nav a.cta{background:var(--yellow);color:#2a2000}
+.menu{display:none;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:inherit;color:var(--text);cursor:pointer}
+@media (max-width:720px){.menu{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:#fff;padding:10px 20px 16px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}}
+.hero{padding:56px 0 0;overflow:hidden}
+.hero p{max-width:36em;font-size:1.2rem;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;font:700 1rem "Nunito Sans",sans-serif}
+.btn.y{background:var(--yellow);color:#2a2000}.btn.o{border-color:var(--blue);color:var(--blue);background:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0 0 8px;list-style:none}
+.chips li{background:#e6f3ea;border-radius:999px;padding:8px 18px;font-weight:700;font-size:1.05rem;color:var(--navy)}.chips li:nth-child(1){background:#fff3cf}.chips li:nth-child(2){background:#e3effb}
+.att{border:1px solid var(--line);border-top:5px solid var(--blue);border-radius:16px;padding:16px;background:#fff}.att h4{margin:0 0 6px;font-size:1.1rem}.att p{margin:0;font-size:.95rem;color:var(--muted)}
+.sub{color:var(--muted);max-width:40em}
+.disc{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:24px}
+.disc figure{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.disc figcaption{padding:12px 16px}.disc b{display:block;color:var(--navy)}.disc span{font-size:.93rem;color:var(--muted)}
+.about{display:grid;gap:32px;grid-template-columns:1.2fr 1fr;align-items:start}
+.facts{background:#e6f3ea;border-radius:18px;padding:24px}.facts ul{margin:0;padding-left:1.1em}
+@media (max-width:720px){.about{grid-template-columns:1fr}}
+.class{margin-top:44px}.class>p{max-width:42em;color:var(--muted)}
+.ch{border-left:6px solid var(--blue);padding-left:14px;margin-bottom:6px}.ch h3{margin:0;font-size:1.5rem}
+.bf .ch{border-color:var(--yellow)}.op .ch{border-color:var(--green)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(18,58,107,.07)}
+.card .body{padding:14px 16px 16px}.card h4{margin:0 0 2px;font-size:1.15rem}.card p{margin:0 0 10px;font-size:.93rem;color:var(--muted)}
+.more{width:100%;padding:9px;border-radius:10px;border:2px solid var(--blue);background:#fff;color:var(--blue);font:700 .95rem "Nunito Sans",sans-serif;cursor:pointer}
+.more:hover{background:var(--blue);color:#fff}
+.open-area{border:2px dashed var(--green);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-top:16px}
+.open-area div{padding:22px}@media (max-width:620px){.open-area{grid-template-columns:1fr}}
+form{display:grid;gap:16px;grid-template-columns:1fr 1fr;max-width:760px}.full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:.95rem;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;color:var(--text);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:11px 12px}
+input:focus,select:focus,textarea:focus{border-color:var(--blue)}
+.msg{display:none;margin-top:20px;max-width:760px;padding:18px;border-radius:14px}
+.msg.ok{display:block;background:#e6f3ea;border:1.5px solid var(--green)}.msg.err{display:block;background:#fff6d6;border:1.5px solid var(--yellow)}
+@media (max-width:620px){form{grid-template-columns:1fr}}
+footer{background:var(--navy);color:#fff;padding:30px 0;text-align:center}footer p{margin:.2em 0}
+#ov{display:none;position:fixed;inset:0;background:rgba(10,25,45,.85);z-index:50;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px 16px;overflow:auto}
+#ov.on{display:block}
+.dlg{max-width:760px;margin:0 auto;background:#fff;border-radius:18px;overflow:hidden}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}.dh b{font:800 1.15rem Fraunces,Georgia,serif;color:var(--navy)}
+.x{border:0;background:var(--soft);border-radius:50%;width:38px;height:38px;font-size:1.3rem;cursor:pointer}
+.stage{position:relative}.nv{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font-size:1.4rem;cursor:pointer}
+.nv.l{left:10px}.nv.r{right:10px}
+.th{display:flex;gap:10px;padding:12px 16px}.th button{flex:1;border:3px solid transparent;border-radius:10px;padding:0;overflow:hidden;background:none;cursor:pointer}
+.th button.on{border-color:var(--yellow)}.cap{padding:0 16px 16px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home">Wild Acacia<span> Camp</span></a>
+<button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<nav aria-label="Main"><ul id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#tents">Our Tents</a></li><li><a class="cta" href="#bookings">Bookings</a></li>
+</ul></nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<h1>Sleep under<br>Namibia’s sky.</h1>
+<p>Red dunes by day, a sky full of stars by night. Wild Acacia Camp offers safari tents, bird-named huts and open ground for your own tent.</p>
+<ul class="chips"><li>Authentic culture</li><li>Warm hospitality</li><li>Natural beauty</li></ul>
+<div class="btns"><a class="btn y" href="#bookings">Book your stay</a><a class="btn o" href="#tents">See our tents</a></div>
+</div>
+<svg viewBox="0 0 1200 280" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Red Namibian dunes with a camel thorn tree and a tent at sunset">
+<circle cx="900" cy="80" r="52" fill="#f5b921"/>
+<path d="M0 190Q220 90 470 180T900 150T1200 180V280H0Z" fill="#eaa06a"/>
+<path d="M0 235Q260 150 560 225T1200 200V280H0Z" fill="#d9733a"/>
+<path d="M0 255Q300 215 700 250T1200 240V280H0Z" fill="#b8532a"/>
+<path d="M300 262L380 160L460 262Z" fill="#1f5fa8"/><path d="M380 160V262H430Z" fill="#123a6b" opacity=".3"/><path d="M366 262L380 225L394 262Z" fill="#f5b921"/>
+<rect x="800" y="185" width="8" height="75" fill="#5b3a20"/><path d="M730 190Q805 140 880 190Q805 172 730 190Z" fill="#3e8e5a"/>
+</svg></section>
+
+<section id="discover"><div class="wrap">
+<h2>Discover Namibia</h2>
+<p class="sub">Our camp is a base for some of the country’s most famous sights.</p>
+<div class="disc" id="disc"></div>
+<h3 style="margin-top:44px;color:var(--navy);font-size:1.6rem">Around Ruacana</h3>
+<p class="sub">Ruacana sits on the Kunene River, on the border with Angola. These are some of the sights to visit from there.</p>
+<div class="disc" id="rua"></div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<div><h2>About us</h2>
+<p>We are a small, family-run campsite built on one idea: sleep close to nature without giving up a good night’s rest. Our grounds are shaded by old trees and shared with wildlife and birds.</p>
+<p>Whether you want a ready-made tent with a proper bed or just a patch of ground for your own, you are welcome. Our team is on site daily to help with firewood, directions and travel tips.</p></div>
+<div class="facts"><h3>On site</h3><ul><li>Shared ablution blocks with hot showers</li><li>Fire pits and firewood on request</li><li>Braai and picnic areas</li><li>Walking and birdwatching trails</li><li>Safe parking next to your site</li></ul></div>
+</div></section>
+
+<section id="tents"><div class="wrap">
+<h2>Our tents</h2>
+<p class="sub">Three ways to camp with us. Tap “View more images” on any tent to see inside.</p>
+<div class="class bf"><div class="ch"><h3>The Big Five</h3></div><p>Five premium tents, each named after one of Africa’s Big Five.</p><div class="grid" id="bigfive"></div></div>
+<div class="class bn"><div class="ch"><h3>The Birds Nest</h3></div><p>Ten comfortable tents, each named after a bird you may spot from your doorstep.</p><div class="grid" id="birds"></div></div>
+<div class="class op"><div class="ch"><h3>The Outpost</h3></div>
+<div class="open-area"><div id="outimg"></div><div><p style="margin:0">An open camping area for guests who bring their own tent. Choose your spot, pitch up and enjoy the shared facilities, fire pits and star-filled nights.</p></div></div></div>
+</div></section>
+
+<section id="bookings"><div class="wrap">
+<h2>Book your stay</h2>
+<p class="sub">Tell us when you want to come and where you want to sleep.</p>
+<form id="bform" novalidate>
+<div><label for="name">Full name</label><input id="name" autocomplete="name"></div>
+<div><label for="email">Email</label><input id="email" type="email" autocomplete="email"></div>
+<div><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel"></div>
+<div><label for="guests">Number of guests</label><input id="guests" type="number" min="1" max="20" value="2"></div>
+<div><label for="in">Check-in</label><input id="in" type="date"></div>
+<div><label for="out">Check-out</label><input id="out" type="date"></div>
+<div><label for="cls">Tent class</label><select id="cls"><option value="">Choose a class</option><option>The Big Five</option><option>The Birds Nest</option><option>The Outpost (bring your own tent)</option></select></div>
+<div><label for="tent">Tent</label><select id="tent"><option value="">Choose a class first</option></select></div>
+<div class="full"><label for="notes">Anything else we should know?</label><textarea id="notes" rows="3"></textarea></div>
+<div class="full"><button class="btn y" type="submit">Send booking request</button></div>
+</form>
+<div class="msg" id="msg" role="status" aria-live="polite"></div>
+</div></section>
+</main>
+<footer><div class="wrap"><p><strong>Wild Acacia Camp</strong> · Namibia</p><p>© 2026 Wild Acacia Camp. All rights reserved.</p></div></footer>
+
+<div id="ov" role="dialog" aria-modal="true" aria-label="Tent photos"><div class="dlg">
+<div class="dh"><b id="dt"></b><button class="x" id="cl" aria-label="Close">×</button></div>
+<div class="stage"><div id="big"></div><button class="nv l" id="pv" aria-label="Previous image">‹</button><button class="nv r" id="nx" aria-label="Next image">›</button></div>
+<div class="th" id="th"></div><div class="cap" id="cap"></div></div></div>
+
+<script>
+var V='<svg viewBox="0 0 400 260" role="img" aria-label="';
+var DUNE=['#d9733a','#e08a4a','#c9622f'];
+function ext(a,k){return V+'Tent outside in the desert"><rect width="400" height="260" fill="#fde9c9"/><circle cx="'+(60+k*26)+'" cy="58" r="28" fill="#f5b921"/><path d="M0 170Q100 110 220 160T400 140V260H0Z" fill="#e8955a"/><path d="M0 210Q140 150 280 200T400 190V260H0Z" fill="'+DUNE[k%3]+'"/><path d="M130 218L200 120L270 218Z" fill="'+a+'"/><path d="M200 120V218H238Z" fill="#000" opacity=".15"/><path d="M186 218L200 175L214 218Z" fill="#fff6d6"/></svg>';}
+function inside(a,k){var two=k%2;return V+'Inside the tent"><rect width="400" height="260" fill="#fff8ec"/><rect y="190" width="400" height="70" fill="#a9754a"/><rect x="150" y="30" width="100" height="62" rx="6" fill="#bfe0f5" stroke="#8a5a33" stroke-width="4"/><path d="M150 92Q190 55 250 80V92Z" fill="#e08a4a"/><rect x="50" y="108" width="300" height="34" rx="6" fill="#8a5a33"/><rect x="50" y="138" width="300" height="56" rx="8" fill="#fff"/><rect x="50" y="160" width="300" height="34" rx="6" fill="'+a+'"/><ellipse cx="100" cy="146" rx="34" ry="12" fill="#e9eef3"/><ellipse cx="'+(two?300:210)+'" cy="146" rx="34" ry="12" fill="#e9eef3"/><path d="M360 0V40" stroke="#5b3a20" stroke-width="3"/><rect x="348" y="40" width="24" height="30" rx="5" fill="#f5b921"/><rect x="20" y="198" width="60" height="26" rx="4" fill="#3e8e5a"/></svg>';}
+function night(a,k){var s='';for(var i=0;i<26;i++)s+='<circle cx="'+((i*53+k*17)%400)+'" cy="'+((i*29)%110+8)+'" r="1.6" fill="#fff"/>';return V+'Tent at night under stars"><rect width="400" height="260" fill="#0f2a4a"/>'+s+'<path d="M0 200Q150 150 400 195V260H0Z" fill="#123a6b"/><path d="M120 225L190 135L260 225Z" fill="'+a+'"/><path d="M176 225L190 185L204 225Z" fill="#f5b921"/><path d="M310 225L325 190L340 225Z" fill="#f07a2a"/><path d="M318 225L325 205L332 225Z" fill="#f5b921"/></svg>';}
+var M=['<rect x="130" y="190" width="14" height="30" fill="#c18f33"/><rect x="215" y="190" width="14" height="30" fill="#c18f33"/><ellipse cx="190" cy="168" rx="85" ry="38" fill="#d9a441"/><path d="M110 160Q70 150 75 195" stroke="#c18f33" stroke-width="7" fill="none"/><circle cx="75" cy="197" r="9" fill="#8a4b1e"/><circle cx="285" cy="135" r="52" fill="#8a4b1e"/><circle cx="287" cy="140" r="32" fill="#e6b95a"/><circle cx="275" cy="132" r="4" fill="#222"/><circle cx="300" cy="132" r="4" fill="#222"/><path d="M280 148h14l-7 9z" fill="#333"/>',
+'<rect x="120" y="185" width="11" height="38" fill="#d49a3a"/><rect x="225" y="185" width="11" height="38" fill="#d49a3a"/><ellipse cx="185" cy="165" rx="88" ry="30" fill="#e8b04a"/><path d="M100 160Q55 150 60 100Q62 85 75 90" stroke="#e8b04a" stroke-width="8" fill="none"/><circle cx="285" cy="140" r="27" fill="#e8b04a"/><path d="M268 120l4-16 10 10zM296 114l10-10 4 16z" fill="#e8b04a"/><g fill="#5b3a20"><circle cx="140" cy="158" r="5"/><circle cx="170" cy="172" r="5"/><circle cx="195" cy="156" r="5"/><circle cx="225" cy="170" r="5"/><circle cx="155" cy="185" r="4"/><circle cx="275" cy="132" r="3.5"/><circle cx="295" cy="132" r="3.5"/><circle cx="285" cy="148" r="4"/></g>',
+'<g fill="#7a8794"><rect x="112" y="190" width="28" height="36"/><rect x="150" y="190" width="28" height="36"/><rect x="215" y="190" width="28" height="36"/><rect x="250" y="190" width="28" height="36"/></g><ellipse cx="190" cy="150" rx="92" ry="56" fill="#8b98a5"/><circle cx="292" cy="132" r="38" fill="#8b98a5"/><ellipse cx="262" cy="135" rx="22" ry="32" fill="#6f7d8b"/><path d="M322 135Q352 150 340 205" stroke="#8b98a5" stroke-width="18" fill="none" stroke-linecap="round"/><path d="M312 152Q336 168 330 186" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="305" cy="122" r="4" fill="#222"/>',
+'<g fill="#8a939b"><rect x="105" y="190" width="24" height="34"/><rect x="150" y="190" width="24" height="34"/><rect x="225" y="190" width="24" height="34"/><rect x="265" y="190" width="24" height="34"/></g><ellipse cx="190" cy="158" rx="95" ry="46" fill="#9aa3ab"/><ellipse cx="298" cy="170" rx="42" ry="27" fill="#9aa3ab"/><path d="M316 152L334 112L340 156Z" fill="#5b4a3a"/><path d="M290 148L298 128L306 150Z" fill="#5b4a3a"/><path d="M268 138l-4-16 14 8z" fill="#8a939b"/><circle cx="288" cy="160" r="4" fill="#222"/>',
+'<g fill="#2e2420"><rect x="110" y="190" width="22" height="34"/><rect x="150" y="190" width="22" height="34"/><rect x="225" y="190" width="22" height="34"/><rect x="262" y="190" width="22" height="34"/></g><ellipse cx="190" cy="158" rx="92" ry="46" fill="#3b2f2a"/><path d="M262 132Q222 130 232 98" stroke="#e9dcc0" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M310 132Q350 130 340 98" stroke="#e9dcc0" stroke-width="10" fill="none" stroke-linecap="round"/><ellipse cx="286" cy="165" rx="34" ry="32" fill="#2e2420"/><ellipse cx="292" cy="185" rx="16" ry="11" fill="#5b4a3a"/><circle cx="275" cy="155" r="4" fill="#fff"/><circle cx="300" cy="155" r="4" fill="#fff"/>'];
+/* bird: body, belly, head, beak, beak length, crest, leg lift, neck lift, wing */
+var B=[['#2b2b2b','#fff','#2b2b2b','#f5b921',60,'',0,0,'#444'],['#1f7ac8','#f08a2c','#1f7ac8','#222',55,'',0,0,'#1f5fa8'],['#7a4a2a','#fff','#fff','#f5b921',26,'',0,0,'#5b3a20'],['#f48fb1','#f8bbd0','#f48fb1','#333',30,'',45,35,'#e56b97'],['#3e8e5a','#6fc28a','#6fc28a','#222',40,'',0,0,'#2f7a4b'],['#2a7fd0','#b78bd9','#4fb3a8','#222',30,'',0,0,'#1f5fa8'],['#f5b921','#ffd95a','#f5b921','#6b4a2b',22,'',0,0,'#c98f10'],['#9aa3ab','#e6e9ec','#e6e9ec','#c9892f',22,'#222',40,0,'#555'],['#d9a441','#fff','#fff','#e0c080',12,'',0,0,'#c18f33'],['#e89a5b','#f2b27a','#e89a5b','#222',48,'#e07a3a',0,0,'#222']];
+function bird(p){var d=p[6],h=p[7];return '<rect x="90" y="190" width="220" height="8" rx="4" fill="#8a5a33"/><path d="M200 '+(160-d)+'V190M215 '+(160-d)+'V190" stroke="#555" stroke-width="4"/><path d="M160 '+(130-d)+'L95 '+(175-d)+'L135 '+(150-d)+'Z" fill="'+p[8]+'"/><ellipse cx="200" cy="'+(125-d)+'" rx="46" ry="38" fill="'+p[0]+'"/><ellipse cx="212" cy="'+(138-d)+'" rx="28" ry="26" fill="'+p[1]+'"/><ellipse cx="185" cy="'+(120-d)+'" rx="26" ry="18" fill="'+p[8]+'"/><path d="M235 '+(105-d)+'L245 '+(88-d-h)+'" stroke="'+p[2]+'" stroke-width="16"/><g transform="translate(0,'+(-d-h)+')">'+(p[5]?'<path d="M225 70L238 40L248 68L262 45L262 75Z" fill="'+p[5]+'"/>':'')+'<circle cx="245" cy="88" r="24" fill="'+p[2]+'"/><circle cx="252" cy="84" r="5" fill="#fff"/><circle cx="253" cy="84" r="2.5" fill="#111"/><path d="M265 80L'+(265+p[4])+' 90L265 96Z" fill="'+p[3]+'"/></g>';}
+function art(a,k){var b=k>4,s=b?'<rect width="400" height="260" fill="#dff0fb"/><circle cx="70" cy="55" r="26" fill="#f5b921"/><path d="M0 200Q120 150 250 190T400 180V260H0Z" fill="#9fd0a8"/>'+bird(B[k-5]):'<rect width="400" height="260" fill="#fff3d6"/><circle cx="330" cy="55" r="26" fill="#f5b921"/><rect y="195" width="400" height="65" fill="#e8c98a"/>'+M[k];return V+T[k].n+' illustration">'+s+'</svg>';}
+var VIEWS=[[art,'Wildlife'],[ext,'Outside'],[inside,'Inside'],[night,'At night']];
+var COL=['#f5b921','#1f5fa8','#3e8e5a'];
+var T=[],bf=[['Lion','Sleeps up to 4 · king-size bed'],['Leopard','Sleeps up to 4 · private deck'],['Elephant','Sleeps up to 6 · family tent'],['Rhino','Sleeps up to 4 · shaded veranda'],['Buffalo','Sleeps up to 4 · fire pit outside']];
+var bd=['Hornbill','Kingfisher','Fish Eagle','Flamingo','Bee-eater','Lilac-breasted Roller','Weaver','Secretarybird','Barn Owl','Hoopoe'];
+bf.forEach(function(t){T.push({n:t[0],d:t[1],a:'#f5b921'})});
+bd.forEach(function(b,i){T.push({n:b,d:'Cosy tent with beds and bedding',a:i%2?'#1f5fa8':'#3e8e5a'})});
+function card(i){var t=T[i];return '<div class="card">'+art(t.a,i)+'<div class="body"><h4>'+t.n+'</h4><p>'+t.d+'</p><button class="more" data-i="'+i+'">View more images</button></div></div>';}
+document.getElementById('bigfive').innerHTML=[0,1,2,3,4].map(card).join('');
+document.getElementById('birds').innerHTML=[5,6,7,8,9,10,11,12,13,14].map(card).join('');
+document.getElementById('outimg').innerHTML=V+'Open camping area"><rect width="400" height="260" fill="#fde9c9"/><circle cx="320" cy="60" r="28" fill="#f5b921"/><path d="M0 180Q150 130 400 175V260H0Z" fill="#e8955a"/><path d="M0 225Q200 180 400 220V260H0Z" fill="#d9733a"/><path d="M70 215L110 160L150 215Z" fill="#3e8e5a"/><path d="M230 220L270 165L310 220Z" fill="#1f5fa8"/><rect x="198" y="140" width="6" height="70" fill="#5b3a20"/><path d="M165 145Q200 115 240 145Q200 135 165 145Z" fill="#3e8e5a"/></svg>';
+
+var ov=document.getElementById('ov'),cur=0,ix=0,last=null;
+function show(){var t=T[cur];document.getElementById('dt').textContent=t.n+' tent';document.getElementById('big').innerHTML=VIEWS[ix][0](t.a,cur);document.getElementById('cap').textContent=VIEWS[ix][1]+' view of the '+t.n+' tent. Photos shown are illustrations.';
+document.getElementById('th').innerHTML=VIEWS.map(function(v,j){return '<button class="'+(j==ix?'on':'')+'" data-j="'+j+'" aria-label="'+v[1]+'">'+v[0](t.a,cur)+'</button>'}).join('');}
+function openG(i){cur=i;ix=0;last=document.activeElement;show();ov.classList.add('on');document.getElementById('cl').focus();}
+function closeG(){ov.classList.remove('on');if(last)last.focus();}
+function step(d){ix=(ix+d+VIEWS.length)%VIEWS.length;show();}
+document.addEventListener('click',function(e){var b=e.target.closest('.more');if(b)openG(+b.dataset.i);var th=e.target.closest('#th button');if(th){ix=+th.dataset.j;show();}if(e.target===ov)closeG();});
+document.getElementById('cl').onclick=closeG;document.getElementById('pv').onclick=function(){step(-1)};document.getElementById('nx').onclick=function(){step(1)};
+document.addEventListener('keydown',function(e){if(!ov.classList.contains('on'))return;if(e.key==='Escape')closeG();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);});
+
+var D=[['Sossusvlei dunes','Some of the tallest red dunes on Earth, glowing at sunrise.','<rect width="400" height="260" fill="#fde9c9"/><circle cx="310" cy="60" r="30" fill="#f5b921"/><path d="M0 200L150 70L300 200V260H0Z" fill="#e8955a"/><path d="M150 70L300 200H150Z" fill="#b8532a"/><path d="M120 260L300 120L400 200V260Z" fill="#d9733a"/>'],
+['Etosha waterhole','Wildlife gathers at the edge of a vast white salt pan.','<rect width="400" height="260" fill="#fff3d6"/><rect y="150" width="400" height="110" fill="#e6d3a3"/><ellipse cx="170" cy="200" rx="110" ry="28" fill="#6fb3e0"/><rect x="310" y="90" width="7" height="80" fill="#5b3a20"/><path d="M265 95Q315 55 365 95Q315 82 265 95Z" fill="#3e8e5a"/><circle cx="70" cy="60" r="26" fill="#f5b921"/>'],
+['Fish River Canyon','One of the largest canyons in the world, carved over millions of years.','<rect width="400" height="260" fill="#fde9c9"/><path d="M0 110L60 100L110 130L170 105L230 140L300 110L400 120V260H0Z" fill="#c9622f"/><path d="M0 160L80 150L150 185L240 160L320 190L400 170V260H0Z" fill="#a9481f"/><path d="M120 260Q170 215 220 235T330 260Z" fill="#6fb3e0"/>'],
+['Quiver tree forest','Strange, beautiful trees that glow gold at sunset.','<rect width="400" height="260" fill="#ffe3b3"/><circle cx="90" cy="70" r="30" fill="#f5b921"/><rect y="205" width="400" height="55" fill="#c9622f"/><path d="M200 210V140M200 160L160 120M200 150L245 110M160 120L140 95M245 110L270 90" stroke="#6b4a2b" stroke-width="9" fill="none" stroke-linecap="round"/><g fill="#3e8e5a"><circle cx="140" cy="90" r="20"/><circle cx="270" cy="85" r="20"/><circle cx="200" cy="112" r="18"/><circle cx="160" cy="112" r="14"/></g>']];
+document.getElementById('disc').innerHTML=D.map(function(d){return '<figure>'+V+d[0]+'">'+d[2]+'</svg><figcaption><b>'+d[0]+'</b><span>'+d[1]+'</span></figcaption></figure>'}).join('');
+
+var R=[['Ruacana Falls','A mighty Kunene River waterfall on the Angola border, up to about 120 m high and 700 m wide in full flood. Best seen in the rainy season.','#1f5fa8'],['Ruacana Hydropower Station','One of Namibia’s main sources of electricity, built on the same river as the falls.','#f5b921'],['Kunene River cruises','Relaxed sunset cruises with chances to see hippos, crocodiles and river birds.','#3e8e5a'],['Himba village visits','Guided visits to traditional OvaHimba villages, led by trained community guides.','#f5b921'],['Epupa Falls','A scenic series of falls about 135 km downstream, a favourite stop in the north.','#1f5fa8']];
+document.getElementById('rua').innerHTML=R.map(function(r){return '<div class="att" style="border-top-color:'+r[2]+'"><h4>'+r[0]+'</h4><p>'+r[1]+'</p></div>'}).join('');
+var cls=document.getElementById('cls'),tent=document.getElementById('tent');
+cls.addEventListener('change',function(){var o=[];if(cls.value==='The Big Five')o=bf.map(function(t){return t[0]});else if(cls.value==='The Birds Nest')o=bd;
+if(o.length){tent.disabled=false;tent.innerHTML='<option value="">Any available</option>'+o.map(function(x){return '<option>'+x+'</option>'}).join('')}else{tent.innerHTML='<option value="">Open camping area</option>';tent.disabled=!!cls.value}});
+var inEl=document.getElementById('in'),outEl=document.getElementById('out'),today=new Date().toISOString().slice(0,10);inEl.min=today;outEl.min=today;
+inEl.addEventListener('change',function(){outEl.min=inEl.value||today});
+document.getElementById('bform').addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('msg'),v=function(i){return document.getElementById(i).value.trim().replace(/</g,'&lt;')},bad='';
+if(!v('name')||!/^\S+@\S+\.\S+$/.test(v('email')))bad='Please enter your name and a valid email address.';else if(!v('in')||!v('out')||v('out')<=v('in'))bad='Check-out must be after check-in.';else if(!v('cls'))bad='Please choose a tent class.';
+if(bad){m.className='msg err';m.textContent=bad;return}
+m.className='msg ok';m.innerHTML='<strong>Thank you, '+v('name')+'.</strong><br>Your request: '+v('guests')+' guest(s), '+v('in')+' to '+v('out')+', '+v('cls')+(v('tent')?' – '+v('tent'):'')+'.<br>We will reply to '+v('email')+' to confirm.';this.reset();tent.innerHTML='<option value="">Choose a class first</option>';});
+var menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',function(){var o=links.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+</script>
+</body>
+</html>
